@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html,
+    body {
+      height: 100vh;
+      display: grid;
+      background: #f74da2;
+      font-family: "Open Sans", sans-serif;
+    }
+    .profile {
+      margin: auto;
+      height: 710px;
+      width: 400px;
+      background: rgb(177, 57, 57);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border-radius: 20px;
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+      -ms-overflow-style: none;
+      /* for Internet Explorer, Edge */
+      scrollbar-width: none;
+      /* for Firefox */
+      overflow-y: scroll;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+      /* for Chrome, Safari, and Opera */
+    }
+    .header-color {
+      border-radius: 20px 20px 0 0;
+      padding-bottom: 150px;
+      width: 400px;
+      background: #4f759b;
+    }
+    .profile-pic img {
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      border: 10px solid #fff;
+      margin-top: -100px;
+    }
+    .title {
+      margin-bottom: 25px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #131b23;
+      margin-bottom: 10px;
+      letter-spacing: 0.025em;
+    }
+    h2 {
+      font-size: 18px;
+      letter-spacing: 0.01em;
+      color: #131b23;
+    }
+    h2 span {
+      color: #4f759b;
+      font-weight: 700;
+    }
+    .description {
+      margin-bottom: 25px;
+      color: #131b23;
+      letter-spacing: 0.01em;
+    }
+    .description p:not(:last-child) {
+      margin-bottom: 5px;
+    }
+    button {
+      font-family: "Open Sans", sans-serif;
+      color: #fff;
+      background: #4f759b;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.025em;
+      border: none;
+      border-radius: 15px;
+      min-height: 35px;
+      width: 100px;
+      margin-bottom: 25px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    button:hover {
+      width: 115px;
+      background: #4f759b e0;
+    }
+    .images-container {
+      width: 350px;
+    }
+    .images-container .image {
+      margin-bottom: 25px;
+    }
+    .images-container .image img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 5px;
+    }
+    .images-container .image i {
+      color: #9b1d20;
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+    }
+    .images-container .image i span {
+      margin-left: 5px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #000;
+    }
+
+  
+  </style>
+  <body>
+    <div class="profile">
+      <div class="profile-pic">
+        <div class="header-color"></div>
+        <img
+          src="https://anniedotexe.github.io/hosted-assets/dailyui/dailyui006/profile-pic.jpg"
+          alt="Profile Picture"
+        />
+      </div>
+      <div class="title">
+        <h1>Steve Rogers</h1>
+        <h2>
+          <span class="highlighted">Captain America</span> at Avengers Compound
+        </h2>
+      </div>
+      <div class="description">
+        <p>Best friend of Bucky Barnes</p>
+        <p>Can't get drunk</p>
+        <p>Worthy of Mjölnir</p>
+      </div>
+      <button class="follow">Follow</button>
+
+      <div class="images-container">
+        <div class="image">
+          <img
+            src="https://anniedotexe.github.io/hosted-assets/dailyui/dailyui006/dinner.jpg"
+            alt="Image Post"
+          />
+          <i class="fas fa-heart"><span>70,418</span></i>
+        </div>
+        <div class="image">
+          <img
+            src="https://anniedotexe.github.io/hosted-assets/dailyui/dailyui006/planning.jpg"
+            alt="Image Post"
+          />
+          <i class="fas fa-heart"><span>48,657</span></i>
+        </div>
+        <div class="image">
+          <img
+            src="https://anniedotexe.github.io/hosted-assets/dailyui/dailyui006/civil-war.jpg"
+            alt="Image Post"
+          />
+          <i class="fas fa-heart"><span>53,829</span></i>
+        </div>
+      </div>
+
+      
+    </div>
+  </body>
+ 
+  </script>
+</html>
