@@ -1,42 +1,4 @@
-// console.clear();
-// const uls = document.querySelectorAll("nav ul");
-// const  links = [...document.querySelectorAll("nav a")];
-// const light = document.querySelector("nav .tubelight");
-// let activeIndex = 0;
-// let cursorIndex = 0;
-// let increment = 1;
-// links.forEach(links,index) =>
-// {
-//     if (links[index].classList.contains("active"));
-//     {
-//         light.getElementsByClassName.left = `${links[index].offsetLeft + SVGFESpotLightElement.offset.Width /4}px`;
-
-//     }
-//     links.addEventListner("click", (e) =>
-//     {
-//         activeIndex = index;
-//         let t = setInterval(() =>
-//         {
-//             if (activeIndex > cursorIndex) increment = 1;
-//             else if (activeIndex < cursorIndex) increment = -1;
-//             cursorIndex += increment;
-//             links[cursorIndex].classList.add("active");
-//             if(cursorIndex != -1)
-//             links[cursorIndex -increment].classList.remove("active");
-
-//             if (cursorIndex == activeIndex)
-//             {
-//                 e.target.classList.add("active");
-//                 increment = 0;
-//                 clearInterval(t);
-//             }
-//         }, 50);
-//     });
-// }
-
-
-
-
+//    nav bar designnnn
 
 console.clear();
 const uls = document.querySelectorAll("nav ul");
@@ -74,3 +36,20 @@ links.forEach((link, index) =>
 		light.style.left = `${e.target.offsetLeft + light.offsetWidth / 4}px`;
 	});
 });
+
+
+// tab bar
+
+function openMenu(evt, menuName){
+	var i, tabcontent, tablinks;
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for (i=0; i<tabcontent.length; i++){
+		tabcontent[i].style.display = "none";
+	}
+	tablinks = document.getElementsByClassName("tablinks");
+	for(i = 0; i<tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace("active", "");
+	}
+	document.getElementById(menuName).style.display = "block";
+	evt.currentTarget.className += "active";
+}

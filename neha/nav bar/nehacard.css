@@ -109,6 +109,7 @@ body {
     display: flex;
     /* justify-content: center; */
     align-items: center;
+    transition: 0.3s;
 }
 .nav_bar ul li a{
     display: block;
@@ -150,19 +151,19 @@ body {
     clip-path: polygon(5% 100%, 25% 0px, 75% 0px, 95% 100%);
     pointer-events:none;
 }
-.download{
+/* .download{
     margin-left: -14px;
 }
 .bank{
     margin-left: -10px;
 }
-.Qr{
+.user{
     margin-left: -3px;
 }
-.form{
+.service{
     margin-left: -8px;
 }
-.flip{
+.back{
     margin-left: -6px;
-}
+} */
 
