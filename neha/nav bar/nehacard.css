@@ -107,7 +107,7 @@ body {
     list-style: none;
     height: 100%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 .nav_bar ul li a{
@@ -144,9 +144,25 @@ body {
     top: 5px;
     width: 160%;
     height: 80px;
-    background: linear-gradient(to bottom,
+    background: linear-gradient(to bottom,    
     rgba(0, 0, 0, 0.3) -50%,
     rgba(0, 0, 0, 0)90%);
     clip-path: polygon(5% 100%, 25% 0px, 75% 0px, 95% 100%);
-    pointer-events: none;
+    pointer-events:none;
 }
+.download{
+    margin-left: -14px;
+}
+.bank{
+    margin-left: -10px;
+}
+.Qr{
+    margin-left: -3px;
+}
+.form{
+    margin-left: -8px;
+}
+.flip{
+    margin-left: -6px;
+}
+
