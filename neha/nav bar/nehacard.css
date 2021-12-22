@@ -107,16 +107,24 @@ body {
     list-style: none;
     height: 100%;
     /* display: flex; */
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     transition: 0.3s;
+    display: flex;
+    /* width: calc(100% / 5); */
+    cursor: pointer;
+    margin: 0;
 }
 .nav_bar ul li a{
     display: block;
     /* width: 100%; */
     height: 100%;
-    cursor: pointer;
+    /* cursor: pointer; */
     margin-top: 12px;
+}
+.nav_bar ul li i{
+    display: block;
+    /* margin-bottom: 6px; */
 }
 .nav_bar ul li a i{
     color: black;
@@ -124,6 +132,8 @@ body {
     height: 100%; */
     opacity: 0.7;
     transition: opacity 100ms ease;
+    padding: 10px;
+    /* font-size: 10px; */
 }
 .nav_bar ul li a.active i{
     opacity: 1;
@@ -133,7 +143,7 @@ body {
     left: 0px;
     right: 0px;
     transform: translateX(-50%);
-    width: 45px;
+    width: 40px;
     height: 5px;
     border-radius: 5px;
     background: black;
@@ -151,6 +161,26 @@ body {
     rgba(0, 0, 0, 0)90%);
     clip-path: polygon(5% 100%, 25% 0px, 75% 0px, 95% 100%);
     pointer-events:none;
+}
+.tab-body{
+    /* position: relative; */
+    /* height: 100px; */
+    padding: 5px;
+}
+.tab-body > div{
+    position: absolute;
+    top: -200%;
+    opacity: 0;
+    margin-top: 5px;
+    transform: scale(0.9);
+    transition: opacity 500ms ease-in-out 0ms,
+    transform 500ms ease-in-out 0ms;
+}
+.tab-body > div.active {
+    top: 0px;
+    opacity: 1;
+    transform: scale(1);
+    margin-top: 0px;
 }
 /* .download{
     margin-left: 35px;
