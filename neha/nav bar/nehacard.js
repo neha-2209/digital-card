@@ -1,18 +1,18 @@
 //    nav bar designnnn
 
 console.clear();
-const uls = document.querySelectorAll("nav ul");
-const links = [...document.querySelectorAll("nav a")];
-const light = document.querySelector("nav .tubelight");
+const uls = document.querySelectorAll(".tab_bar ul");
+const links = [...document.querySelectorAll(".tab_bar a")];
+const light = document.querySelector(".tab_bar .tubelight");
 let activeIndex = 0;
 let currentIndex = 0;
 let increment = 1;
 links.forEach((link, index) => 
 {
-	// if (links[index].classList.contains("active"))
-    // {
-	// 	light.style.left = `${links[index].offsetLeft + light.offsetWidth / 4}px`;
-	// }
+	if (links[index].classList.contains("active"))
+    {
+		light.style.left = `${links[index].offsetLeft + light.offsetWidth / 4 }px`;
+	}
 
 
 	link.addEventListener("click", (e) => 
@@ -42,19 +42,31 @@ links.forEach((link, index) =>
 
 // tab bar
 
-function openMenu(evt, menuName){
-	var i, tabcontent, tablinks;
-	tabcontent = document.getElementsByClassName("tabcontent");
-	for (i=0; i<tabcontent.length; i++){
-		tabcontent[i].style.display = "none";
-	}
-	tablinks = document.getElementsByClassName("tablinks");
-	for(i = 0; i<tablinks.length; i++) {
-		tablinks[i].className = tablinks[i].className.replace("active", "");
-	}
-	document.getElementById(menuName).style.display = "block";
-	evt.currentTarget.className += "active";
-}
+// function openMenu(evt, menuName){
+// 	var i, tabcontent, tablinks;
+// 	tabcontent = document.getElementsByClassName("tabcontent");
+// 	for (i=0; i<tabcontent.length; i++){
+// 		tabcontent[i].style.display = "none";
+// 	}
+// 	tablinks = document.getElementsByClassName("tablinks");
+// 	for(i = 0; i<tablinks.length; i++) {
+// 		tablinks[i].className = tablinks[i].className.replace("active", "");
+// 	}
+// 	document.getElementById(menuName).style.display = "block";
+// 	evt.currentTarget.className += "active";
+// }
+
+
+
+
+const tabs = document.querySelectorAll('[data-tab-target')
+
+tabs.forEach (tab => {
+	tab.addEventListener('click',() => {
+		const target = document.querySelector(tab.dataset.tabTarget)
+		target.classList.add('active')
+	})
+})
 
 
 
