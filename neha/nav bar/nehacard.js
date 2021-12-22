@@ -9,10 +9,10 @@ let currentIndex = 0;
 let increment = 1;
 links.forEach((link, index) => 
 {
-	if (links[index].classList.contains("active"))
-    {
-		light.style.left = `${links[index].offsetLeft + light.offsetWidth / 4}px`;
-	}
+	// if (links[index].classList.contains("active"))
+    // {
+	// 	light.style.left = `${links[index].offsetLeft + light.offsetWidth / 4}px`;
+	// }
 	link.addEventListener("click", (e) => 
     {
 		activeIndex = index;
