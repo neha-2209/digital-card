@@ -11,18 +11,20 @@ body {
     align-items: center;
 }
 .container1{
-    background-color: rgb(235, 191, 191)
+    background-color: rgb(235, 191, 191);
+    width: 370px;
 }
 .profile_img{
     position: relative;
-    width: 440px;
+    width: 368px;
 }
 .profile_img2{
-    position: absolute;
-    width: 141px;
-    height: 141px;
-    margin-top: 213px;
-    margin-left: -402px;
+    position: relative;
+    display: flex;
+    width: 130px;
+    height: 130px;
+    margin-top: -65px;
+    margin-left: 43px;
     border-radius: 100%;
     border: 2px solid #D9F9F7;
     box-sizing: border-box;
@@ -30,61 +32,65 @@ body {
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .header{
-    margin-left: 243px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
 }
 .social_icon{
-    font-size: 25px;
+    font-size: 20px;
 }
 .phone{
-    margin-top: -68px;
-    margin-left: 10px;
+    margin-top: -54px;
+    margin-left: 14px;
     position: absolute;
     color: black;
 }
 .whatsapp{
     position: absolute;
-    margin-left: 33px;
-    margin-top: -24px;
+    margin-left: 34px;
+    margin-top: -10px;
     color: black;
 }
 .wikipedia{
     position: absolute;
     margin-left: 76px;
-    margin-top: -4px;
+    margin-top: 9px;
     color: black;
 }
 .map{
     position: absolute;
-    margin-top: -6px;
+    margin-top: 4px;
     margin-left: 133px;
     color: black;
 }
 .info{
     text-align: center;
     justify-content: center;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
-.fa-info-circle{
+/* .fa-info-circle{
     position: absolute;
-    font-size: 24px;
-    margin-top: 3px;
-    margin-left: 150px;
-}
+    font-size: 20px;
+    margin-top: 4px;
+    margin-left: 125px;
+} */
 .icon_bar a{
-    font-size: 30px;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
     margin-left: 40px;
     color: #056774;
 }
-.icon_bar1{
+/* .icon_bar1{
     margin-left: 5px;
-}
+} */
 .icon_info{
     position: absolute;
-    margin-top: -26px;
-    margin-left: 114px;
+    margin-top: -20px;
+    margin-left: 104px;
     display: flex;
+    font-size: 12px;
+    padding: 2px;
 }
 .tab_bar{
     position: relative;
@@ -207,3 +213,59 @@ body {
 .active[data-tab-content] {
     display: block;
 }
+
+
+
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    display: flex;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    /* float: left; */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 37px;
+    transition: 0.3s;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+    opacity: 1;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    /* padding: 6px 12px; */
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+#Paris{
+    text-align: center;
+    /* justify-content: center; */
+}
+.QR{
+    height: 150px;
+    width: 150px;
+}
+
+/* #usa{
+    text-align: left;
+    margin-left: 15px;
+} */
