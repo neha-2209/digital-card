@@ -1,0 +1,329 @@
+:root{
+    --blue:#275ef;
+    --black:black;
+    --whitesmoke:whitesmoke;
+}
+*{
+    margin: 0;padding: 0;
+}
+.card{
+    padding: 1rem;
+    border-radius: 30px;
+    background-color: #eee;
+    box-shadow: 20px 20px 40px #333, -20px -20px 40px #333;
+    border: none;
+    perspective: 1000px;
+}
+.flipcard{
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+    transform-style: preserve-3d;
+}
+.rounded-circle{
+    height: 10rem;
+    width: 10rem;
+    margin-top: -5rem;
+    /* position: absolute; */
+}
+.card-body{
+    margin-left: 16rem;
+    margin-top: -4rem;
+}
+.btn{
+    width: 80px;
+    height: 80px;
+    outline: 0;
+    color: #fff;
+    margin-right: 10px;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    border: var(--black);
+    /* border: red; */
+    background: linear-gradient(145deg, #b6afaf, #ffffff);
+    margin-left: 1.5rem;
+}
+.btn:hover{
+    background: linear-gradient(145deg, #2c2929, #ffffff);
+    box-shadow: inset 20px 20px 60px #cacaca, inset -20px -20px 60px #ffffff;
+    border-radius: 50%;
+}
+.btn:active{
+    background: linear-gradient(145deg, black, #ffffff);
+    border-radius: 50%;
+    }
+.information{
+    background-color:var(--whitesmoke) ;
+    text-align: center;
+    position: relative;
+    margin-top: 2rem;
+    border-radius: 30px;
+    padding: 18px;
+}
+.information_profile{
+    background-color: white;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 5px 4px rgb(160, 146, 146);
+}
+.i{
+    margin-right: 20rem; 
+    margin-top: 1.3rem; 
+    font-size: 4rem;
+    color: rgb(129, 124, 124);
+}
+.border1{
+    border-left: 6px solid black;
+    height: 100px;
+    position: relative;
+    margin-left: 120px;
+}
+.name{
+    font-size: 25px;
+    text-align: left;
+    margin-left: -47px;
+}
+.whatsapp{
+    margin-top: 0.9rem;
+    position: absolute;
+    margin-left: 4.5rem;
+}
+
+.btn-2{
+    
+    background: #f5ebf5;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+
+}
+.btn12{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    float: left;
+    border-radius: 50%;
+    background-color: rgb(133, 127, 127);  
+    font-size: 50px;
+    margin-left: 4rem;
+    margin-top: 1rem;
+}
+.flip12{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    float: right;
+    border-radius: 50%;
+    background-color: rgb(133, 127, 127);
+    font-size: 50px;
+    margin-right: 4rem;
+    margin-top: 1rem;
+}
+
+.fa-share-alt{
+    position: relative;
+    font-size: 50px !important;
+}
+.btn12:hover {
+    background-color: black;
+    color: blanchedalmond;
+}
+.flip12:hover {
+    background-color: black;
+    color: blanchedalmond;
+    cursor: pointer;
+}
+/* flip-button */
+.is-flipped {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+                                /* shareeeeeeeeee */
+
+
+.share-button{
+    width: 280px;
+    height: 80px;
+    background: #dfe6e9;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: .3s linear;
+    margin-left: 23%;
+}
+.share-button:hover{
+    transform: scale(1.1);
+}
+.share-button span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #2d3436;
+    color: #f1f1f1;
+    text-align: center;
+    line-height: 83px;
+    font-size: 45px;
+    z-index: 999;
+    transition: .6s linear;
+    border-radius: 40px;
+}
+.share-button:hover span{
+    transform: translatex(-100%);
+    transition-delay: .3s;
+}
+.share-button a{
+    flex: auto;
+    font-size: 30px;
+    text-align: center;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 0.3s linear;
+}
+.share-button:hover a{
+    opacity: 1;
+    transform: translateX(0);
+}
+.share-button a:nth-of-type(1){
+    transition-delay: 0.5s;
+}
+.share-button a:nth-of-type(2){
+    transition-delay: 0.4s;
+}
+.share-button a:nth-of-type(3){
+    transition-delay: 0.3s;
+}
+.share-button a:nth-of-type(4){
+    transition-delay: 0.2s;
+}
+
+
+
+
+                        /* nav-bar */
+
+.btn-5{
+    /* display: flex; */
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #eec8de;
+    overflow: hidden;
+}
+.btn-5-5{
+    position: relative;
+    min-width: 350px;
+    min-height: 80px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    box-shadow: 0 6.7px 5.3px rgba(0,0,0,0.12),
+               0 22.3px 17.9px rgba(0,0,0,0.08),
+               0 100px 80px rgba(0,0,0,0.04);
+    overflow:hidden;
+    color: black;
+}
+.btn-5-5 ul{
+    height: 100%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.btn-5-5 ul li{
+    list-style: none;
+}
+.btn-5-5 ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 44px;
+}
+.btn-5-5 ul li a i{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: opacity 100ms ease;
+}
+
+/* backkk sideeee */
+
+.flipcard_front, .flipcard_back{
+  -webkit-backface-visibility: hidden;
+}
+
+.flipcard_back{
+    transform: rotateY(180deg);
+    /* width: 100%; */
+    position: absolute;
+    height: 100%;
+    /* display: none; */
+}
+.header_img{
+    display: flex;
+    margin-top: -80rem;
+    height: 250px;
+    width: 493px;
+    border-radius: 25%;
+}
+.header_title{
+    margin-top: -10rem;
+    margin-left: 0.8rem;
+    font-weight: 600;
+    font-size: 54px;
+}
+.motto{
+    margin-top: 1rem;
+    margin-left: 3rem;
+    display: flex;
+    font-size: 27px;
+}
+.loc__1{
+    margin-top: 60px;
+}
+.goo{
+    justify-content:space-evenly; 
+}
+.info_button{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    font-size: 50px;
+}
+.gallery_button{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    font-size: 50px;
+
+}
+.form_button{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    font-size: 50px;
+
+}
+
+.panel-body{
+    background: linear-gradient(to bottom right, #e687c9, #74bbeb);
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
