@@ -18,7 +18,6 @@ body {
     align-items: center;
 }
 .container1{
-    /* background-color: rgb(235, 191, 191); */
     width: 370px;
     background-image: linear-gradient(#a9bcee, #f5f7fa);    /*card colorrr*/
     box-shadow: 0 5px 5px -3px rgba(83, 39, 39, 0.2), 
@@ -27,7 +26,7 @@ body {
 }
 .profile_img{
     position: relative;
-    width: 368px !important ;
+    width: 350px !important ;
 }
 .profile_img2{
     position: relative;
@@ -77,9 +76,8 @@ body {
 	-o-box-shadow: inset 0 0 0 3px ;
 	-ms-box-shadow: inset 0 0 0 3px ;
 	box-shadow: inset 0 0 0 3px ;
-	
-	/* color: #fff; */
 }
+
 .ease-all{
 	-webkit-transition: all 400ms ease-in-out;
 	-moz-transition: all 400ms ease-in-out;
@@ -93,7 +91,7 @@ body {
 }
 .phone{
     margin-top: -47px;
-    margin-left: 10px;
+    margin-left: 5px;
     position: absolute;
     color: #212529 !important;
 }
@@ -120,6 +118,10 @@ body {
                 0 8px 10px 1px rgb(0 0 0 / 14%), 
                 0 3px 14px 2px rgb(0 0 0 / 12%);
 
+}
+
+.info_main{
+    margin-top: 55px;
 }
 .info{
     text-align: center;
@@ -180,16 +182,13 @@ body {
     width: 100%;
     height: 9rem;
     border-radius: 20px;
-    /* margin: 6px; */
     padding: 2% 0;
 }
 
 .video_content{
     padding: 6px 12px;
-    /* border: 1px solid #ccc; */
     border-top: none;
     margin: 10px;
-    /* background-color: #f2f2f2; */
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
     border-radius: 20px;
     padding-bottom: 12px;
@@ -201,8 +200,8 @@ body {
                 0 8px 10px 1px rgb(0 0 0 / 14%), 
                 0 3px 14px 2px rgb(0 0 0 / 12%);
     color: black;
-    /* border-radius: 35px; */
 }
+
 #video{
     width: 100%;
     padding: 15px;
@@ -219,14 +218,14 @@ body {
   /* Style the buttons that are used to open the tab content */
   .tab button {
     background-color: inherit;
-    /* float: left; */
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 8px 37px;
+    padding: 8px 38px;
     transition: 0.3s;
     justify-content: space-around;
     text-align: center;
+    color: var(--font_color);
   }
   
   /* Change background color of buttons on hover */
@@ -244,20 +243,23 @@ body {
   .tabcontent {
     display: none;
     /* padding: 6px 12px; */
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-top: none;
+    margin: 10px;
   }
 .bank_title{
     box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 
                 0 8px 10px 1px rgb(0 0 0 / 14%), 
                 0 3px 14px 2px rgb(0 0 0 / 12%); 
     color: black;
+    text-align: center;
 }
 .scan{
     box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 
                 0 8px 10px 1px rgb(0 0 0 / 14%), 
                 0 3px 14px 2px rgb(0 0 0 / 12%);
     color: black;
+    text-align: center;
 }
 .gallery_title{
     box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 
@@ -265,29 +267,27 @@ body {
                 0 3px 14px 2px rgb(0 0 0 / 12%);
     color: black;
 }
-#Paris{
-    text-align: center;
-}
+
 .QR{
     height: 150px;
     width: 150px;
+    margin: 10px;
+    /* position: absolute; */
 }
 .bank_info{
     color: var(--font_color);
+    margin: 10px;
 }
 .QR_info{
     color: var(--font_color);
+    margin: 10px;
 }
-
-/* #usa{
-    text-align: left;
-    margin-left: 15px;
-} */
 
 
 
 
 /* backsideeee */
+
 
 .header_back{
     margin-top: 7px;
@@ -300,7 +300,7 @@ body {
     display: flex;
     margin-top: -29px;
     /* height: 250px; */
-    width: 369px;
+    width: 350px;
     border-radius: 25%;
 }
 .header_title{
@@ -332,377 +332,155 @@ body {
     flex-direction: column;
     margin: 5px;
     margin-top: 35px;
+    /* color: var(--font_color) !important; */
+}
+.company_info a{
     color: var(--font_color);
+}
+.company_info i{
+    color: var(--font_color);
+}
+
+
+
+.catelog{
+    box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 
+                0 8px 10px 1px rgb(0 0 0 / 14%), 
+                0 3px 14px 2px rgb(0 0 0 / 12%);
+    color: black;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 30px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
 }
 
 
 
 
 
+/* share button  */
 
-/* slide css */
 
-.slider {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  .slick-slide {
-    margin: 0 5px;
-  }
-  .slick-list {
-    margin: 0px -5px 0px -5px;
-  }
-  button.slick-next, button.slick-next:hover {
+
+  .share-button{
+    width: 150px;
+    height: 25px;
+    background: #dfe6e9;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: .3s linear;
+    margin-left: 27%;
+}
+.share-button:hover{
+    transform: scale(1.1);
+}
+.share-button span{
     position: absolute;
-    top: 41%;
-    right: 54px;
-    width: 47px;
-    height: 75px;
-    background-image: url("http://maggiesadler.com/wp-content/uploads/2015/10/left-right-arrow.png");
-    background-size: 95px;
-  }
-  button.slick-prev, button.slick-prev:hover {
-    position: absolute;
-    top: 41%;
-    left: 15px;
-    z-index: 1;
-    width: 47px;
-    height: 75px;
-    background-image: url("http://maggiesadler.com/wp-content/uploads/2015/10/left-right-arrow.png");
-    background-size: 95px;
-        background-position-x: right;
-  }
-  .slick-prev:before, .slick-next:before {
-    font-size: 70px;
-    color: #EA8496;
-    line-height: inherit;
-    font-weight: bold;
-  }
-  .slider img {
-    height: 324px;
-  }
-  
-  /* Slick Slider Styles -- Provided by https://kenwheeler.github.io/slick/ */
-  /* Slider */
-  .slick-slider
-  {
-      position: relative;
-  
-      display: block;
-  
-      -moz-box-sizing: border-box;
-           box-sizing: border-box;
-  
-      -webkit-user-select: none;
-         -moz-user-select: none;
-          -ms-user-select: none;
-              user-select: none;
-  
-      -webkit-touch-callout: none;
-      -khtml-user-select: none;
-      -ms-touch-action: pan-y;
-          touch-action: pan-y;
-      -webkit-tap-highlight-color: transparent;
-  }
-  
-  .slick-list
-  {
-      position: relative;
-  
-      display: block;
-      overflow: hidden;
-  
-      margin: 0;
-      padding: 0;
-  }
-  .slick-list:focus
-  {
-      outline: none;
-  }
-  .slick-list.dragging
-  {
-      cursor: pointer;
-      cursor: hand;
-  }
-  
-  .slick-slider .slick-track,
-  .slick-slider .slick-list
-  {
-      -webkit-transform: translate3d(0, 0, 0);
-         -moz-transform: translate3d(0, 0, 0);
-          -ms-transform: translate3d(0, 0, 0);
-           -o-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-  }
-  
-  .slick-track
-  {
-      position: relative;
-      top: 0;
-      left: 0;
-  
-      display: block;
-  }
-  .slick-track:before,
-  .slick-track:after
-  {
-      display: table;
-  
-      content: '';
-  }
-  .slick-track:after
-  {
-      clear: both;
-  }
-  .slick-loading .slick-track
-  {
-      visibility: hidden;
-  }
-  
-  .slick-slide
-  {
-      display: none;
-      float: left;
-  
-      height: 100%;
-      min-height: 1px;
-  }
-  [dir='rtl'] .slick-slide
-  {
-      float: right;
-  }
-  .slick-slide img
-  {
-      display: block;
-  }
-  .slick-slide.slick-loading img
-  {
-      display: none;
-  }
-  .slick-slide.dragging img
-  {
-      pointer-events: none;
-  }
-  .slick-initialized .slick-slide
-  {
-      display: block;
-  }
-  .slick-loading .slick-slide
-  {
-      visibility: hidden;
-  }
-  .slick-vertical .slick-slide
-  {
-      display: block;
-  
-      height: auto;
-  
-      border: 1px solid transparent;
-  }
-  .slick-arrow.slick-hidden {
-      display: none;
-  }
-  @charset 'UTF-8';
-  /* Slider */
-  .slick-loading .slick-list
-  {
-      background: #fff url('http://maggiesadler.com/wp-content/uploads/2015/10/ajax-loader.gif') center center no-repeat;
-  }
-  
-  /* Icons */
-  @font-face
-  {
-      font-family: 'slick';
-      font-weight: normal;
-      font-style: normal;
-  
-      src: url('file:///C:/Users/msadler/Desktop/slick-1.5.7/slick/fonts/slick.eot');
-      src: url('file:///C:/Users/msadler/Desktop/slick-1.5.7/slick/fonts/slick.eot?#iefix') format('embedded-opentype'), url('file:///C:/Users/msadler/Desktop/slick-1.5.7/slick/fonts/slick.woff') format('woff'), url('file:///C:/Users/msadler/Desktop/slick-1.5.7/slick/fonts/slick.ttf') format('truetype'), url('file:///C:/Users/msadler/Desktop/slick-1.5.7/slick/fonts/slick.svg#slick') format('svg');
-  }
-  /* Arrows */
-  .slick-prev,
-  .slick-next
-  {
-      font-size: 0;
-      line-height: 0;
-  
-      position: absolute;
-      top: 50%;
-  
-      display: block;
-  
-      width: 20px;
-      height: 20px;
-      margin-top: -10px;
-      padding: 0;
-  
-      cursor: pointer;
-  
-      color: transparent;
-      border: none;
-      outline: none;
-      background: transparent;
-  }
-  .slick-prev:hover,
-  .slick-prev:focus,
-  .slick-next:hover,
-  .slick-next:focus
-  {
-      color: transparent;
-      outline: none;
-      background: transparent;
-  }
-  .slick-prev:hover:before,
-  .slick-prev:focus:before,
-  .slick-next:hover:before,
-  .slick-next:focus:before
-  {
-      opacity: 1;
-  }
-  .slick-prev.slick-disabled:before,
-  .slick-next.slick-disabled:before
-  {
-      opacity: .25;
-  }
-  
-  .slick-prev:before,
-  .slick-next:before
-  {
-      font-family: 'slick';
-      font-size: 20px;
-      line-height: 1;
-  
-      opacity: .75;
-      color: white;
-  
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .slick-prev
-  {
-      left: -25px;
-  }
-  [dir='rtl'] .slick-prev
-  {
-      right: -25px;
-      left: auto;
-  }
-  .slick-prev:before
-  {
-      content: '';
-  }
-  [dir='rtl'] .slick-prev:before
-  {
-      content: '';
-      font-weight: bold;
-      font-size: 20px;
-  }
-  
-  .slick-next
-  {
-      right: -25px;
-  }
-  [dir='rtl'] .slick-next
-  {
-      right: auto;
-      left: -25px;
-  }
-  .slick-next:before
-  {
-      content: '';
-  }
-  [dir='rtl'] .slick-next:before
-  {
-      content: '';
-  }
-  
-  /* Dots */
-  .slick-slider
-  {
-      margin-bottom: 30px;
-  }
-  
-  .slick-dots
-  {
-      position: absolute;
-      bottom: -45px;
-  
-      display: block;
-  
-      width: 100%;
-      padding: 0;
-  
-      list-style: none;
-  
-      text-align: center;
-  }
-  .slick-dots li
-  {
-      position: relative;
-  
-      display: inline-block;
-  
-      width: 20px;
-      height: 20px;
-      margin: 0 5px;
-      padding: 0;
-  
-      cursor: pointer;
-  }
-  .slick-dots li button
-  {
-      font-size: 0;
-      line-height: 0;
-  
-      display: block;
-  
-      width: 20px;
-      height: 20px;
-      padding: 5px;
-  
-      cursor: pointer;
-  
-      color: transparent;
-      border: 0;
-      outline: none;
-      background: transparent;
-  }
-  .slick-dots li button:hover,
-  .slick-dots li button:focus
-  {
-      outline: none;
-  }
-  .slick-dots li button:hover:before,
-  .slick-dots li button:focus:before
-  {
-      opacity: 1;
-  }
-  .slick-dots li button:before
-  {
-      font-family: 'slick';
-      font-size: 6px;
-      line-height: 20px;
-  
-      position: absolute;
-      top: 0;
-      left: 0;
-  
-      width: 20px;
-      height: 20px;
-  
-      content: '•';
-      text-align: center;
-  
-      opacity: .25;
-      color: black;
-  
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-  }
-  .slick-dots li.slick-active button:before
-  {
-      opacity: .75;
-      color: black;
-  }
-  
+    width: 100%;
+    height: 100%;
+    background: var(--font_color);
+    color: #f1f1f1;
+    text-align: center;
+    /* line-height: 83px; */
+    font-size: 15px;
+    z-index: 999;
+    transition: .6s linear;
+    border-radius: 40px;
+}
+.share-button:hover span{
+    transform: translatex(-100%);
+    transition-delay: .3s;
+}
+.share-button a{
+    flex: auto;
+    font-size: 15px;
+    text-align: center;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 0.3s linear;
+    color: var(--font_color);
+}
+.share-button:hover a{
+    opacity: 1;
+    transform: translateX(0);
+}
+.share-button a:nth-of-type(1){
+    transition-delay: 0.5s;
+}
+.share-button a:nth-of-type(2){
+    transition-delay: 0.4s;
+}
+.share-button a:nth-of-type(3){
+    transition-delay: 0.3s;
+}
+.share-button a:nth-of-type(4){
+    transition-delay: 0.2s;
+}
