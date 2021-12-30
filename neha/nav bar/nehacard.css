@@ -1,6 +1,6 @@
 :root {
-    --font_color: #082966;
-    --title: black;
+    --font_color: #ffffff;
+    --title: #ffffff;
 }
 
 
@@ -19,7 +19,7 @@ body {
 }
 .container1{
     width: 370px;
-    background-image: linear-gradient(#a9bcee, #f5f7fa);    /*card colorrr*/
+    background: #1B2533;   /*card colorrr*/
     box-shadow: 0 5px 5px -3px rgba(83, 39, 39, 0.2), 
                 0 8px 10px 1px rgb(0 0 0 / 14%), 
                 0 3px 14px 2px rgb(0 0 0 / 12%);
@@ -28,13 +28,26 @@ body {
     position: relative;
     width: 350px !important ;
 }
+/* .shape_1{
+    position: relative;
+    width: 100%;
+    top: 11px;
+} */
+/* .shape_2{
+    position: absolute;
+    left: 0%;
+    right: 54.07%;
+    top: 30.4%;
+    bottom: 56.98%;
+    background: #E91E36;
+} */
 .profile_img2{
     position: relative;
     display: flex;
     width: 130px;
     height: 130px;
-    margin-top: -65px;
-    margin-left: 43px;
+    margin-top: -78px;
+    margin-left: 37px;
     border-radius: 100%;
     border: 2px solid #D9F9F7;
     box-sizing: border-box;
@@ -42,7 +55,8 @@ body {
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 .profile_name{
-    color: #082966;
+    color: var(--font_color);
+
 }
 .header{
     position: relative;
@@ -114,22 +128,27 @@ body {
     color: rgb(235, 103, 103);
 }
 .information{
-    box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 
+    /* box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 
                 0 8px 10px 1px rgb(0 0 0 / 14%), 
-                0 3px 14px 2px rgb(0 0 0 / 12%);
+                0 3px 14px 2px rgb(0 0 0 / 12%); */
+    /* color: black; */
+    /* height: 28px; */
+    border-radius: 10px;
+    color: var(--font_color);
 
 }
 
 .info_main{
-    margin-top: 55px;
+    margin-top: 60px;
 }
 .info{
     text-align: center;
     justify-content: center;
     /* margin-left: 50px; */
+    color: var(--title);
 }
 /* .fa-info-circle{
-    position: absolute;
+    position: absolute;Tokyo
     font-size: 20px;
     margin-top: 4px;
     margin-left: 125px;
@@ -149,6 +168,9 @@ body {
 } */
 .icon_bar_main{
     color: var(--font_color);
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
 }
 .address{
     padding-bottom: 10px !important;
@@ -164,8 +186,11 @@ body {
 }
 .service_info{
     color: var(--font_color);
-    margin-left: 20px;
+    margin-left: 40px;
     font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
 }
 
 .gallery{
@@ -177,6 +202,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   padding-bottom: 12px;
+  margin-bottom: 20px;
 }
 .item img{
     width: 100%;
@@ -186,20 +212,20 @@ body {
 }
 
 .video_content{
-    padding: 6px 12px;
+    /* padding: 6px 12px; */
     border-top: none;
-    margin: 10px;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
-    border-radius: 20px;
-    padding-bottom: 12px;
+    /* margin: 10px; */
+    /* box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%); */
+    /* border-radius: 20px; */
+    /* padding-bottom: 12px; */
     text-align: center;
 }
 .video_title{
     text-align: center;
-    box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 
+    /* box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 
                 0 8px 10px 1px rgb(0 0 0 / 14%), 
-                0 3px 14px 2px rgb(0 0 0 / 12%);
-    color: black;
+                0 3px 14px 2px rgb(0 0 0 / 12%); */
+    color: var(--title);
 }
 
 #video{
@@ -213,6 +239,11 @@ body {
     border: 1px solid #ccc;
     background-color: #f1f1f1;
     display: flex;
+    height: 50px;
+    background: #E91E36;
+    box-shadow: inset 10px 8px 8px 4px rgb(0 0 0 / 25%);
+    border-top-left-radius: 94.5px;
+    border-top-right-radius: 94.5px;
   }
   
   /* Style the buttons that are used to open the tab content */
@@ -248,39 +279,60 @@ body {
     margin: 10px;
   }
 .bank_title{
-    box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 
+    /* position: absolute; */
+    /* box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 
                 0 8px 10px 1px rgb(0 0 0 / 14%), 
-                0 3px 14px 2px rgb(0 0 0 / 12%); 
-    color: black;
+                0 3px 14px 2px rgb(0 0 0 / 12%);  */
+    color: var(--title);
     text-align: center;
+    /* height: 28px;
+    border-radius: 10px; */
 }
 .scan{
-    box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 
+    /* box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 
                 0 8px 10px 1px rgb(0 0 0 / 14%), 
-                0 3px 14px 2px rgb(0 0 0 / 12%);
-    color: black;
+                0 3px 14px 2px rgb(0 0 0 / 12%); */
+    color: var(--title);
     text-align: center;
+    /* height: 28px;
+    border-radius: 10px; */
 }
 .gallery_title{
-    box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 
+    /* box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 
                 0 8px 10px 1px rgb(0 0 0 / 14%), 
-                0 3px 14px 2px rgb(0 0 0 / 12%);
-    color: black;
+                0 3px 14px 2px rgb(0 0 0 / 12%); */
+    color: var(--title);
+}
+
+.qr_img{
+    height: 150px;
+    /* margin-top: 10px; */
 }
 
 .QR{
-    height: 150px;
-    width: 150px;
+    /* height: 150px; */
+    /* width: 150px; */
     margin: 10px;
+    text-align: center !important;
+    align-items: center !important;
     /* position: absolute; */
+    margin-top: 40px;
 }
 .bank_info{
+    display: flex;
+    flex-direction: column;
     color: var(--font_color);
     margin: 10px;
+    font-size: 14px;
+    margin-top: 40px;
 }
 .QR_info{
+    display: flex;
+    flex-direction: column;
     color: var(--font_color);
     margin: 10px;
+    font-size: 14px;
+    margin-top: 25px;
 }
 
 
@@ -344,10 +396,12 @@ body {
 
 
 .catelog{
-    box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 
+    /* box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 
                 0 8px 10px 1px rgb(0 0 0 / 14%), 
-                0 3px 14px 2px rgb(0 0 0 / 12%);
-    color: black;
+                0 3px 14px 2px rgb(0 0 0 / 12%); */
+    color: var(--title);
+    /* height: 28px;
+    border-radius: 10px; */
 }
 
 
@@ -427,8 +481,8 @@ body {
 
   .share-button{
     width: 150px;
-    height: 25px;
-    background: #dfe6e9;
+    height: 35px;
+    background: #EF6236;
     border-radius: 40px;
     display: flex;
     align-items: center;
@@ -437,7 +491,9 @@ body {
     position: relative;
     cursor: pointer;
     transition: .3s linear;
-    margin-left: 27%;
+    margin-left: 27% !important;
+    margin: 7px;
+    margin-bottom: 20px;
 }
 .share-button:hover{
     transform: scale(1.1);
@@ -446,14 +502,18 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: var(--font_color);
-    color: #f1f1f1;
+    background: #EF6236
+    ;
+    color: var(--title);
     text-align: center;
     /* line-height: 83px; */
     font-size: 15px;
     z-index: 999;
     transition: .6s linear;
     border-radius: 40px;
+}
+.share-button span i{
+    margin-top: 10px;
 }
 .share-button:hover span{
     transform: translatex(-100%);
@@ -484,3 +544,58 @@ body {
 .share-button a:nth-of-type(4){
     transition-delay: 0.2s;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+h5 {
+    position: relative;
+    margin: 0 auto 20px;
+    padding: 10px 40px;
+    text-align: center;
+    background-color: #E91E36;
+    width: 50%;
+    /* clear: both; */
+    /* display: inline-block; */
+    /* overflow: hidden; */
+    white-space: nowrap;
+  }
+  h5::before, h5::after {
+    content: '';
+    width: 80px;
+    height: 100%;
+    background-color:   #E91E36;
+    ;
+    /* position ribbon ends behind and slightly lower */
+    position: absolute;
+    /* z-index: -1; */
+    top: 20px;
+    /* clip ribbon end shape */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 25% 50%);
+    /* draw and position the folded ribbon bit */
+    background-image: linear-gradient(45deg, transparent 50%, #5D3922 50%);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+  h5::before {
+    left: -60px;
+  }
+  h5::after {
+    right: -60px;
+    transform: scaleX(-1); /* flip horizontally */
+  }
+  /* everything below is for demo appearances and not important to the concept */
+
+  @media (max-width: 400px) {
+    h5 { font-size: 1.5rem; }
+  }
