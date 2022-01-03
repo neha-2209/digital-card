@@ -36,18 +36,9 @@
                     <!-- <div class="shape_2"></div> -->
                     <!-- <img class="shape_1" src="img/shape 1.png" alt=""> -->
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path fill="#E91E36" fill-opacity="0.98"
-                        d="M0,288L60,240C120,192,240,96,360,74.7C480,53,600,107,720,154.7C840,203,960,245,1080,256C1200,267,1320,245,1380,234.7L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
-                    </path>
-                </svg>
-                <div class="header">
-                    <img class="profile_img2" src="img/one.jpg">
-                    <div class="profile_name ml-3 mt-2">
-                        <h4>Neha Tejani</h4>
-                        <h6>Web Developer</h6>
-                    </div>
-                </div>
+                <img src="img/card_2.png" class="shape1">
+
+
                 <div class="front_4_btn">
                     <div class="social_icon">
                         <a href="www.phone.com" class="ease-all"><i class="fas fa-phone-alt phone icon_center"></i></a>
@@ -58,6 +49,14 @@
                         <a href="www.map.com" class="ease-all"><i class="fas fa-map-marker-alt map icon_center"></i></a>
                     </div>
                 </div>
+                <div class="header">
+                    <img class="profile_img2" src="img/one.jpg">
+                    <div class="profile_name ">
+                        <h4>Neha Tejani</h4>
+                        <h6>Web Developer</h6>
+                    </div>
+                </div>
+                
 
                 <div class="information info_main">
                     <h5>Information</h5>
@@ -67,7 +66,7 @@
                     <div class="icon_bar address mb-4">
                         <a><i class="lni lni-home mt-1"></i></a>
                         <div class="icon_info">
-                            <p>B-702, Shukan Sky, Katargam, Surat </p>
+                            <span>B-702, Shukan Sky, Katargam, Surat </span>
                         </div>
                     </div>
                     <div class="icon_bar mb-4">
@@ -157,51 +156,82 @@
                 <div class="gallery_title">
                     <h5 style="text-align: center;">Gallery</h5>
                 </div>
-                <div class="gallery">
-                    <div class="row mt-2" style="justify-content: space-evenly;">
-
-                        <div class="col-6 " style="padding-right: 4px;">
-                            <div class="item">
-                                <a href="img/one.jpg" class="fancybox" data-fancybox="gallery1">
-                                    <img src="img/one.jpg" alt="" width="100%" height="100px">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-6 " style="padding-left:4px ;">
-                            <div class="item">
-                                <a href="img/615-500x500.jpg" class="fancybox" data-fancybox="gallery1">
-                                    <img src="img/615-500x500.jpg" alt="" width="100%" height="100px">
-                                </a>
-                            </div>
-                        </div>
 
 
 
-                        <div class="item col-6" style="padding-right: 4px;">
-                            <a href="img/161-700x700.jpg" class="fancybox" data-fancybox="gallery1">
-                                <img src="img/161-700x700.jpg" alt="" width="100%" height="100px">
-                            </a>
-                        </div>
-                        <div class="item col-6" style="padding-left:4px ;">
-                            <a href="img/photo-1445810694374-0a94739e4a03.jfif" class="fancybox"
-                                data-fancybox="gallery1">
-                                <img src="img/photo-1445810694374-0a94739e4a03.jfif" alt="" width="100%" height="100px">
-                            </a>
-                        </div>
-                        <div class="item col-6" style="padding-right: 4px;">
-                            <a href="img/photo-1488190211105-8b0e65b80b4e.jfif" class="fancybox"
-                                data-fancybox="gallery1">
-                                <img src="img/photo-1488190211105-8b0e65b80b4e.jfif" alt="" width="100%" height="100px">
-                            </a>
-                        </div>
-                        <div class="item col-6" style="padding-left:4px ;">
-                            <a href="img/photo-1515260268569-9271009adfdb.jfif" class="fancybox"
-                                data-fancybox="gallery1">
-                                <img src="img/photo-1515260268569-9271009adfdb.jfif" alt="" width="100%" height="100px">
-                            </a>
-                        </div>
+
+
+
+
+
+                <div class="row">
+                    <div class="column">
+                      <img src="img/ss1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
                     </div>
-                </div>
+                    <div class="column">
+                      <img src="img/ss2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                      <img src="img/ss3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                      <img src="img/ss4.jfif" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="img/ss4.jfif" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                      </div>
+                      <div class="column">
+                        <img src="img/ss4.jfif" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                      </div>
+                  </div>
+                  
+                  <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="img/ss1.jpg" style="width:100%">
+                      </div>
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="img/ss2.jpg" style="width:100%">
+                      </div>
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="img/ss3.jpg" style="width:100%">
+                      </div>
+                      
+                      <div class="mySlides">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="img/ss4.jfif" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="img/ss4.jfif" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <div class="numbertext">6 / 6</div>
+                        <img src="img/ss4.jfif" style="width:100%">
+                      </div>
+                      
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+                  
+                  
+                    
+                    </div>
+                  </div>
+
+              
                 <!-- video start -->
 
                 <div class="video_main">
@@ -232,29 +262,53 @@
             <div class=" card_face flipcard_back">
                 <div class="header_back">
                     <img src="img/ss2.jpg" class="header_img">
+
+                   
                 </div>
+
+                <img src="img/card_2.png" class="shape2">
+                
                 <div class="company_name">
-                    <h4 class="header_title">WEBITO INFOTECH</h4>
-                    <h6 class="motto">OUR PASSION, YOUR BUSINESS</h6>
+                    <img src="img/rounded-circle.jpg" class="company_img">
+                    <div class="company_title">
+                        <h4 class="header_title">WEBITO INFOTECH</h4>
+                        <h6 class="motto">OUR PASSION, YOUR BUSINESS</h6>
+                    </div>
                 </div>
 
                 <div class="company_info">
-                    <h6 class="d-inline-block text-dark rounded loc__1 mb-3">
-                        <i class="fa fa-fw fa-map-marker" aria-hidden="true"> </i>
-                        <a href="#" style="text-decoration: none;">B-702 Shukan Sky, Katargam, Surat</a>
-                    </h6>
-                    <h6 class="d-inline-block text-dark rounded mb-3">
-                        <i class="fa fa-fw fa-phone" aria-hidden="true"></i>
-                        <a href="#" style="text-decoration: none;">9925733623</a>
-                    </h6>
-                    <h6 class="d-inline-block text-dark rounded mb-3">
-                        <i class="fa fa-fw fa-whatsapp" aria-hidden="true"> </i>
-                        <a href="#" style="text-decoration: none; ">9925733623</a>
-                    </h6>
-                    <h6 class="d-inline-block text-dark rounded mb-3">
-                        <i class="fa fa-fw fa-instagram" aria-hidden="true"> </i>
-                        <a href="#" style="text-decoration: none;">_t.nehhaa_</a>
-                    </h6>
+                    <div class="icon_bar_main ">
+                        <div class="icon_bar address mb-4">
+                            <a><i class="lni lni-home mt-1"></i></a>
+                            <div class="icon_info">
+                                <span>B-702, Shukan Sky, Katargam, Surat </span>
+                            </div>
+                        </div>
+                        <div class="icon_bar mb-4">
+                            <a><i class="lni lni-chrome mt-1"></i></i></a>
+                            <div class="icon_info">
+                                <span>webito.com</span>
+                            </div>
+                        </div>
+                        <div class="icon_bar mb-4">
+                            <a><i class="lni lni-facebook mt-1"></i></i></a>
+                            <div class="icon_info">
+                                <span>neha_tejani</span>
+                            </div>
+                        </div>
+                        <div class="icon_bar mb-4 mt-1">
+                            <a><i class="lni lni-twitter"></i></i></a>
+                            <div class="icon_info">
+                                <span>neha-tejani</span>
+                            </div>
+                        </div>
+                        <div class="icon_bar mb-4 mt-1">
+                            <a><i class="lni lni-instagram"></i></a>
+                            <div class="icon_info">
+                                <span>_t.nehhaa_</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="catelog text-center">
                     <h5>Our Catelog</h5>
@@ -268,34 +322,34 @@
                       
                       <ul class="gallery--images -scroll-snap">
                         <li class="gallery--image -current">
-                          <img src="https://picsum.photos/480/320" alt="Picture of something">
+                          <img src="img/ss1.jpg" alt="Picture of something">
                         </li>     
                         <li class="gallery--image">
-                          <img src="https://picsum.photos/320/320" alt="Picture of something">
+                          <img src="img/ss2.jpg" alt="Picture of something">
                         </li>
                         <li class="gallery--image">
-                          <img src="https://picsum.photos/200/320" alt="Picture of something">
+                          <img src="img/ss1.jpg" alt="Picture of something">
                         </li>
                         <li class="gallery--image">
-                          <img src="https://picsum.photos/420/320" alt="Picture of something">
+                          <img src="img/ss4.jfif" alt="Picture of something">
                         </li>
                         <li class="gallery--image">
-                          <img src="https://picsum.photos/240/320" alt="Picture of something">
+                          <img src="img/ss5.jfif" alt="Picture of something">
                         </li>
                         <li class="gallery--image">
-                          <img src="https://picsum.photos/500/320" alt="Picture of something">
+                          <img src="img/ss6.jfif" alt="Picture of something">
                         </li>
                         <li class="gallery--image">
-                          <img src="https://picsum.photos/340/320" alt="Picture of something">
+                          <img src="img/ss1.jpg" alt="Picture of something">
                         </li>
                         <li class="gallery--image">
-                          <img src="https://picsum.photos/460/320" alt="Picture of something">
+                          <img src="img/ss2.jpg" alt="Picture of something">
                         </li>
                         <li class="gallery--image">
-                          <img src="https://picsum.photos/220/320" alt="Picture of something">
+                          <img src="img/ss2.jpg" alt="Picture of something">
                         </li>
                         <li class="gallery--image">
-                          <img src="https://picsum.photos/440/320" alt="Picture of something">
+                          <img src="img/ss1.jpg" alt="Picture of something">
                         </li>
                       </ul>
                   
@@ -312,18 +366,6 @@
                     
                   </main>
 
-                <!-- <div class="goo">
-                    <button class="info_button">
-                        <div class="info">
-                            <i class="fa fa-info"></i>
-                        </div>
-                    </button>
-                    <button class="form_button">
-                        <div class="form">
-                            <i class="fa fa-envelope-open-o"></i>
-                        </div>
-                    </button>
-                </div> -->
 
 
                 <div id="contact">Contact Us</div>
@@ -350,18 +392,12 @@
 
 
         <div class="tab tab_bar">
-            <!-- <button class="tablinks" onclick="openCity(event, 'London')" ><i class="fas fa-download download "></i></button> -->
-            <button class="tablinks active" onclick="openCity(event, 'Paris')"><i class="far fa-user-circle user "></i></button>
+            <button class="tablinks active" onclick="openCity(event, 'Paris')" id="defaultOpen"><i class="far fa-user-circle user "></i></button>
             <button class="tablinks" onclick="openCity(event, 'Tokyo')"><i class="fas fa-university bank "></i></button>
-            <button class="tablinks" onclick="openCity(event, 'canada')"><i class="fas fa-arrow-right back "></i></button>
-            <button class="tablinks" onclick="openCity(event, 'usa')"><i class="fas fa-cogs service "></i></button>
+            <button class="tablinks" onclick="openCity(event, 'canada')"><i class="far fa-building"></i></button>
+            <button class="tablinks" onclick="openCity(event, 'usa')"><i class="far fa-images"></i></button>
             
         </div>
-
-        <!-- Tab content -->
-        <!-- <div id="London" class="tabcontent">
-                <a href="#"></a>
-              </div> -->
 
 
 
@@ -374,7 +410,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- <script src="https://codepen.io/z-/pen/a8e37caf2a04602ea5815e5acedab458.js"></script> -->
 <script src="nehacard.js"></script>
 
 <script>
